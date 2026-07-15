@@ -1,0 +1,56 @@
+# POST http://localhost:8000/register HTTP/1.1
+# Content-Type: application/json
+
+# {
+#     "username": "aryanmole121",
+#     "password": "mypassword112341",
+#     "email": "aryan21@.com",
+#     "name": "Aryan31 Mole"
+# }
+
+# POST http://localhost:8000/login HTTP/1.1
+# Content-Type: application/json
+
+# {
+#      "email": "aryan21@.com",
+#     "password": "mypassword112341"
+# }
+
+
+//for image we used postman form-data key profile_picture then in front of that upload file(img) below that token and only verified token only in front of that in text format
+
+# GET http://localhost:8000/get_user_and_profile HTTP/1.1
+# Content-Type: application/json
+
+# {
+#     "token":"825bde663e88e8a16268f4a3e6eb0fa927d634c228012511c0a2ffb1fde1b1b2"
+# }
+
+
+
+# POST http://localhost:8000/update_profile_data HTTP/1.1
+# Content-Type: application/json
+
+# {
+#      "token":"20fe68d354ab3136b1d8231765b85e58634c563a33c58b27893682a11f1d556f",
+#     "bio": "I am Batman",
+#     "currentPost": "CTO",
+#     "pastWork": [
+#         {
+#             "company":"Google",
+#             "position":"CFO",
+#             "years":"2+"
+#         }
+#     ],
+#     "education": [
+#         {
+#              "school":"DYP",
+#             "degree":"B-Tech",
+#             "fieldOfStudy":"CSE"
+#         }
+#     ]
+# }
+
+# GET http://localhost:8000/user/get_all_user HTTP/1.1
+
+
