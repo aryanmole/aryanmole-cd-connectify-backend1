@@ -27,4 +27,15 @@ const start = async()=>{
     ])
 }
 
+app.get("/",async(req,res)=>{
+    res.json({
+        msg:"home"
+    })
+})
+
+app.get("/test",async(req,res)=>{
+    res.json({
+        msg:"test was successfull"
+    })
+})
 start()
