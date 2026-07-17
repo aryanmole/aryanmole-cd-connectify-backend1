@@ -35,7 +35,7 @@ app.get("/",async(req,res)=>{
 
 app.get("/test",async(req,res)=>{
     res.json({
-        msg:"test was successfull"
+        msg:"Final update: test was successfull"
     })
 })
 start()
