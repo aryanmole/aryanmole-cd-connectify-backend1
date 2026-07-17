@@ -19,9 +19,10 @@ jobs:
 
     steps:
     - name: Backup .env
-      run:
-        if [-f .env]; then mv .env /tmp/env_backup; fi
-
+      run: |
+        if [ -f .env ]; then
+          mv .env /tmp/env_backup
+        fi
     - name: Restore .env
       run:
         if [-f /tmp/env_backup]; then mv /tmp/env_backup .env; fi
